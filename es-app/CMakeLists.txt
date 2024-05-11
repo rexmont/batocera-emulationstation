@@ -66,6 +66,7 @@ set(ES_HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiWifi.h # batocera
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiImageViewer.h # batocera
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBatoceraStore.h # batocera	
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiLaunchpad.h # batocera	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBios.h # batocera	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiControllersSettings.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiKeyMappingEditor.h
@@ -165,7 +166,8 @@ set(ES_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBluetoothPair.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiWifi.cpp # batocera
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiImageViewer.cpp # batocera
-	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBatoceraStore.cpp # batocera	
+	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBatoceraStore.cpp # batocera
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiLaunchpad.cpp # batocera	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiBios.cpp # batocera	
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiControllersSettings.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiKeyMappingEditor.cpp

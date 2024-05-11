@@ -12,6 +12,7 @@
 #include "guis/GuiThemeInstaller.h"
 #include "guis/GuiBezelInstaller.h"
 #include "guis/GuiBatoceraStore.h"
+#include "guis/GuiLaunchpad.h"
 #include "guis/GuiSettings.h"
 #include "guis/GuiRetroAchievements.h"
 #include "guis/GuiGamelistOptions.h"
@@ -3882,7 +3883,13 @@ void GuiMenu::openQuitMenu_static(Window *window, bool quickAccessMenu, bool ani
 						openQuitMenu_static(w, true, false);
 					}, "iconSound");
 			}
-		}
+		
+		
+		s->addEntry(_("START LAUNCHPAD"), true, [this]
+			{
+				mWindow->pushGui(new GuiLaunchpad(mWindow));
+
+			}, "iconGames", true);}
 
 		s->addEntry(_("LAUNCH SCREENSAVER"), false, [s, window]
 			{
